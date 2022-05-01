@@ -19,7 +19,7 @@ function calculateHanoi(/* disksNumber, turnsSpeed */) {
   // remove line with error and write your code here
   let turns = 2 ** disksNumber - 1;
   let seconds = turns / (turnsSpeed / 60 / 60);
-  return `turns: &{turns}, seconds: &{Math.floor(seconds)}`;
+  return 'turns: ' + turns ', ' + 'seconds: ' + Math.floor(seconds);
 }
 
 module.exports = {
