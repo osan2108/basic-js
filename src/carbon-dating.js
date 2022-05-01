@@ -20,7 +20,7 @@ const HALF_LIFE_PERIOD = 5730;
 function dateSample(/* sampleActivity */) {
   //throw new NotImplementedError('Not implemented');
   const k = 0.693;
-  if (isNaN(sampleActivity) || typeof sampleActivity != 'string' || sampleActivity <= 0){
+   if (!sampleActivity || typeof sampleActivity != "string" || isNaN(sampleActivity) || +sampleActivity <= 0 || +sampleActivity > 15) {
     return false;
   } else {
   let time = (Math.log(MODERN_ACTIVITY / sampleActivity)) /(k / HALF_LIFE_PERIOD);  
