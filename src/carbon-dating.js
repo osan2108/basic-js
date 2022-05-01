@@ -21,10 +21,10 @@ function dateSample(/* sampleActivity */) {
   //throw new NotImplementedError('Not implemented');
   const k = 0.693;
   if (isNaN(sampleActivity) || typeof sampleActivity != 'string' || sampleActivity <= 0){
-      return false;
+    return false;
   } else {
-  let time = (Math.log(MODERN_ACTIVITY / sampleActivity)) /(k / HALF_LIFE_PERIOD); 
-    return Math.ceil(time);
+  let time = (Math.log(MODERN_ACTIVITY / sampleActivity)) /(k / HALF_LIFE_PERIOD);  
+  return Math.ceil(time);
   }
 }
 
