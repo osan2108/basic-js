@@ -21,7 +21,7 @@ function dateSample(sampleActivity) {
   // throw new NotImplementedError('Not implemented');
   // remove line with error and write your code here
   const k = 0.693;
-  if (isNaN(sampleActivity) || typeof sampleActivity != 'string' || sampleActivity <= 0){
+  if (isNaN(sampleActivity) || typeof sampleActivity != 'string' || sampleActivity <= 0 || sampleActivity > 15){
     return false;        
   } else {
     let time = (Math.log(MODERN_ACTIVITY / sampleActivity)) /(k / HALF_LIFE_PERIOD); 
