@@ -20,7 +20,7 @@ function createDreamTeam(members) {
 
   for (let i = 0; i < members.length; i++) {
     if(typeof members[i] === 'string') {
-      dreamTeam.push(members[i].trim()[0].toUpperCase());
+      dreamTeam.push(members[i][0].toUpperCase());
     }
   }
 
